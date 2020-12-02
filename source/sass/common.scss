@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 360px;
+  min-height: 100%;
+  padding: 0;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic-blue;
+  letter-spacing: 0.06px;
+
+  background-color: $basic-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,67 @@
+.sales-pitch {
+  margin-bottom: 80px;
+  background-image: linear-gradient(to top, rgba($special-light-blue, 0.2) 8%, transparent 30%);
+
+  @media (min-width: $desktop-width) {
+    min-height: 668px;
+    margin-bottom: 180px;
+  }
+}
+
+.sales-pitch__container {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 90px;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -10px;
+      right: -190px;
+      z-index: -1;
+      width: 687px;
+      height: 625px;
+
+      background-image: url("../img/bg-sales-pitch.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+
+.sales-pitch__group {
+  @media (min-width: $desktop-width) {
+    max-width: 530px;
+  }
+}
+
+.sales-pitch__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 600;
+  color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 74px;
+  }
+}
+
+.sales-pitch__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 425px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.sales-pitch__button {
+  box-shadow: $special-shadow;
+}

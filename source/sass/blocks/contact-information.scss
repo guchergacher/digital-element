@@ -1,0 +1,28 @@
+.contact-information {
+  color: $basic-white;
+  font-style: normal;
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+  }
+}
+
+.contact-information__text {
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  b {
+    margin-right: 15px;
+  }
+}

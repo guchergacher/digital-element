@@ -1,0 +1,83 @@
+.card {
+  position: relative;
+  padding: 235px 48px 48px;
+
+  background-color: $basic-white;
+  box-shadow: $basic-shadow;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 250px;
+    height: 215px;
+    transform: translateX(-50%);
+
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &--make {
+    @media (min-width: $desktop-width) {
+      margin-top: 300px;
+    }
+
+    &::before {
+      background-image: url("../img/bg-presentation-2.svg");
+      background-size: 182px auto;
+    }
+  }
+
+  &--bring::before {
+    top: -20px;
+
+    background-image: url("../img/bg-presentation-1.svg");
+    background-size: 224px auto;
+  }
+
+  &--build::before {
+    background-image: url("../img/bg-presentation-3.svg");
+    background-size: 156px auto;
+  }
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.card__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: rgba($basic-blue, 0.6);
+}
+
+.card__link {
+  display: inline-block;
+  padding: 8px 75px 8px 0;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: $basic-extra-light-blue;
+
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  background-size: 16px auto;
+
+  &:hover {
+    background-position: right 20px center;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
